@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .portrait-bg { fill: #f5f5f5; }
+        .portrait-outline { fill: none; stroke: #007A3D; stroke-width: 2; }
+        .portrait-text { font-family: Arial, sans-serif; font-size: 24px; fill: #007A3D; }
+    </style>
+    <rect class="portrait-bg" width="400" height="500" rx="20"/>
+    <circle class="portrait-outline" cx="200" cy="200" r="100"/>
+    <path class="portrait-outline" d="M200,300 L200,400"/>
+    <path class="portrait-outline" d="M150,350 L250,350"/>
+    <text class="portrait-text" x="200" y="450" text-anchor="middle">CEO Portrait</text>
+</svg> 

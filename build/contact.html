@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Uruk Group</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo-uruk.svg" alt="Uruk Group Logo">
+      <span>Uruk Group</span>
+    </div>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="ehs.html">EHS Planning</a>
+      <a href="legal.html">Legal</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-title">Contact Us</div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>We're here to help with your engineering and construction needs. Contact us through any of the channels below or fill out the form.</p>
+          
+          <div class="contact-details">
+            <div class="contact-card">
+              <h3>Headquarters</h3>
+              <p>Uruk Group Building<br>
+              Al-Mansour District<br>
+              Baghdad, Iraq</p>
+            </div>
+            
+            <div class="contact-card">
+              <h3>Contact Information</h3>
+              <p>Phone: +964 123 456 7890<br>
+              Email: info@urukgroup.com<br>
+              Fax: +964 123 456 7891</p>
+            </div>
+            
+            <div class="contact-card">
+              <h3>Business Hours</h3>
+              <p>Sunday - Thursday: 8:00 AM - 5:00 PM<br>
+              Friday - Saturday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="services">Services Information</option>
+                <option value="projects">Project Inquiry</option>
+                <option value="careers">Career Opportunities</option>
+                <option value="media">Media Relations</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="cta">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--clay);">
+      <div class="section-title">Our Offices</div>
+      <div class="offices-grid">
+        <div class="office-card">
+          <h3>Baghdad Office</h3>
+          <p>Uruk Group Building<br>
+          Al-Mansour District<br>
+          Baghdad, Iraq</p>
+          <a href="#" class="cta">View on Map</a>
+        </div>
+        
+        <div class="office-card">
+          <h3>Basra Office</h3>
+          <p>Al-Ashar Business Center<br>
+          Basra, Iraq</p>
+          <a href="#" class="cta">View on Map</a>
+        </div>
+        
+        <div class="office-card">
+          <h3>Erbil Office</h3>
+          <p>Empire World Business Center<br>
+          Erbil, Iraq</p>
+          <a href="#" class="cta">View on Map</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="ehs.html">EHS Planning</a>
+      <a href="legal.html">Legal</a>
+      <a href="contact.html">Contact</a>
+      <a href="resources/uruk-corporate-profile.pdf" download>Corporate Profile (PDF)</a>
+    </div>
+    &copy; 2025 Uruk Group. All rights reserved. | Designed for the future of Iraq.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

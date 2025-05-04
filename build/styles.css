@@ -1386,11 +1386,11 @@ tr:hover {
 
 .ceo-message {
     padding: 4rem 0;
-    background-color: var(--color-background-alt);
+    background-color: var(--secondary-background);
 }
 
-.ceo-message .grid {
-    gap: 3rem;
+.ceo-message .grid-2 {
+    gap: 4rem;
     align-items: center;
 }
 
@@ -1398,7 +1398,7 @@ tr:hover {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .ceo-image img {
@@ -1409,39 +1409,39 @@ tr:hover {
 }
 
 .ceo-image:hover img {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .ceo-content {
-    max-width: 600px;
+    color: var(--text-color);
 }
 
 .ceo-content h2 {
-    color: var(--color-primary);
-    margin-bottom: 1.5rem;
-}
-
-.ceo-profile {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
     margin-bottom: 2rem;
 }
 
 .ceo-profile h3 {
-    color: var(--color-text);
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--primary-color);
 }
 
 .ceo-title {
-    color: var(--color-text-light);
     font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 2rem;
 }
 
 .ceo-content blockquote {
+    font-size: 1.1rem;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    border: none;
-    font-style: italic;
-    color: var(--color-text);
-    line-height: 1.6;
+    border-left: none;
 }
 
 .ceo-content blockquote p {
@@ -1453,387 +1453,51 @@ tr:hover {
 }
 
 /* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-    .ceo-message {
-        background-color: var(--color-background-alt-dark);
-    }
-    
-    .ceo-image {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
+[data-theme="dark"] .mission-hero {
+    background: linear-gradient(135deg, #005a2c 0%, #9a0d1c 100%);
 }
 
-/* Responsive adjustments */
+[data-theme="dark"] .ceo-message {
+    background-color: var(--dark-secondary-background);
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-    .ceo-message .grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .ceo-image {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    
-    .ceo-content {
-        text-align: center;
-    }
-    
-    .ceo-profile {
-        margin-bottom: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .ceo-message {
-        padding: 3rem 0;
-    }
-    
-    .ceo-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .ceo-profile h3 {
-        font-size: 1.4rem;
-    }
-    
-    .ceo-title {
-        font-size: 1rem;
-    }
-    
-    .ceo-content blockquote {
-        font-size: 1rem;
-    }
-}
-
-/* Engineering Process Section */
-.engineering-process {
-    padding: 4rem 0;
-    background-color: var(--color-background-alt);
-}
-
-.engineering-process h2 {
-    color: var(--color-primary);
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.engineering-process .grid {
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-.engineering-content {
-    max-width: 600px;
-}
-
-.engineering-content h3 {
-    color: var(--color-text);
-    margin: 2rem 0 1rem;
-    font-size: 1.5rem;
-}
-
-.success-areas {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-.success-areas li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--color-text);
-}
-
-.success-areas li::before {
-    content: "•";
-    color: var(--color-primary);
-    position: absolute;
-    left: 0;
-}
-
-.engineering-image {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.engineering-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.engineering-image:hover img {
-    transform: scale(1.02);
-}
-
-.design-process {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.design-process h3 {
-    color: var(--color-primary);
-    margin: 2rem 0 1rem;
-    font-size: 1.5rem;
-}
-
-.design-process p {
-    margin-bottom: 1.5rem;
-    color: var(--color-text);
-    line-height: 1.6;
-}
-
-.qms-dimensions,
-.engineering-standards {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.qms-dimensions li,
-.engineering-standards li {
-    position: relative;
-    padding-left: 1.5rem;
-    color: var(--color-text);
-}
-
-.qms-dimensions li::before,
-.engineering-standards li::before {
-    content: "•";
-    color: var(--color-primary);
-    position: absolute;
-    left: 0;
-}
-
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-    .engineering-process {
-        background-color: var(--color-background-alt-dark);
-    }
-    
-    .engineering-image {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .engineering-process .grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .engineering-image {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    
-    .engineering-content {
-        text-align: center;
-    }
-    
-    .success-areas {
-        text-align: left;
-        display: inline-block;
-    }
-    
-    .qms-dimensions,
-    .engineering-standards {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .engineering-process {
-        padding: 3rem 0;
-    }
-    
-    .engineering-process h2 {
-        font-size: 1.8rem;
-    }
-    
-    .engineering-content h3,
-    .design-process h3 {
-        font-size: 1.4rem;
-    }
-    
-    .design-process p {
-        font-size: 1rem;
-    }
-}
-
-/* EHS Planning Page Styles */
-.ehs-hero {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--white);
-    padding: 6rem 0;
-    text-align: center;
-}
-
-.ehs-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.ehs-hero .hero-subtitle {
-    font-size: 1.5rem;
-    opacity: 0.9;
-}
-
-.ehs-intro {
-    padding: 4rem 0;
-    background-color: var(--background-alt);
-}
-
-.ehs-intro .grid {
-    gap: 4rem;
-    align-items: center;
-}
-
-.ehs-content {
-    max-width: 600px;
-}
-
-.ehs-content h2 {
-    color: var(--primary);
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.ehs-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text);
-}
-
-.ehs-image {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.ehs-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.ehs-image:hover img {
-    transform: scale(1.02);
-}
-
-.ehs-activities {
-    padding: 4rem 0;
-    background-color: var(--background);
-}
-
-.ehs-activities h2 {
-    color: var(--primary);
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.activity-card {
-    background: var(--white);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.activity-card:hover {
-    transform: translateY(-5px);
-}
-
-.activity-card h3 {
-    color: var(--primary);
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid var(--primary);
-}
-
-.activity-card ul {
-    list-style: none;
-    padding: 0;
-}
-
-.activity-card li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--text);
-}
-
-.activity-card li::before {
-    content: "•";
-    color: var(--primary);
-    position: absolute;
-    left: 0;
-}
-
-/* Dark mode adjustments */
-[data-theme="dark"] .activity-card {
-    background: var(--dark-bg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-[data-theme="dark"] .activity-card li {
-    color: var(--dark-text);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .ehs-hero h1 {
+    .mission-hero h1 {
         font-size: 2.5rem;
     }
 
-    .ehs-hero .hero-subtitle {
-        font-size: 1.2rem;
+    .mission-hero .hero-subtitle {
+        font-size: 1.25rem;
     }
 
-    .ehs-intro .grid {
+    .mission-content h2,
+    .ceo-content h2 {
+        font-size: 2rem;
+    }
+
+    .ceo-message .grid-2 {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .ehs-content h2,
-    .ehs-activities h2 {
-        font-size: 2rem;
-    }
-
-    .activity-card {
-        margin-bottom: 2rem;
+    .ceo-image {
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 480px) {
-    .ehs-hero {
+    .mission-hero {
         padding: 4rem 0;
     }
 
-    .ehs-content h2,
-    .ehs-activities h2 {
-        font-size: 1.8rem;
+    .mission-hero h1 {
+        font-size: 2rem;
     }
 
-    .activity-card h3 {
-        font-size: 1.4rem;
+    .mission-text,
+    .ceo-content blockquote {
+        font-size: 1rem;
     }
 } 

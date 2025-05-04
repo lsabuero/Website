@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .logo-text { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: bold; }
-    .logo-symbol { fill: #CE1126; }
-    .logo-text { fill: #000000; }
-  </style>
+<svg width="164" height="51" viewBox="0 0 164 51" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g>
-    <!-- Uruk symbol -->
-    <path class="logo-symbol" d="M10 10 L20 40 L30 10 L40 40 L50 10" stroke="#CE1126" stroke-width="3" fill="none"/>
-    <!-- Uruk text -->
-    <text class="logo-text" x="60" y="35">Uruk Group</text>
+    <!-- URUK Text -->
+    <text x="0" y="38" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="#555555">URUK</text>
+    <!-- Swoosh Red -->
+    <path d="M120 10 Q140 25 120 40" stroke="#CE1126" stroke-width="7" fill="none"/>
+    <!-- Swoosh White -->
+    <path d="M127 10 Q147 25 127 40" stroke="#FFFFFF" stroke-width="7" fill="none"/>
+    <!-- Swoosh Green -->
+    <path d="M134 10 Q154 25 134 40" stroke="#007A3D" stroke-width="7" fill="none"/>
+    <!-- Gray Triangle -->
+    <polygon points="141,10 163,25 141,40" fill="#555555"/>
   </g>
 </svg> 
