@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .logo-symbol { fill: #8B4513; }
+    .logo-symbol { fill: #CE1126; }
   </style>
   <g>
-    <path class="logo-symbol" d="M6 6 L10 26 L14 6 L18 26 L22 6" stroke="#8B4513" stroke-width="2" fill="none"/>
+    <path class="logo-symbol" d="M6 6 L10 26 L14 6 L18 26 L22 6" stroke="#CE1126" stroke-width="2" fill="none"/>
   </g>
 </svg> 
