@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-    <style>
-        .text { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #007A3D; }
-    </style>
-    <text x="4" y="24" class="text">U</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <circle cx="50" cy="50" r="45" fill="#006B3F"/>
+  <text x="50" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="50" fill="#FFFFFF">U</text>
 </svg> 

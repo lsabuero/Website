@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover Uruk Group's comprehensive EPC services in power generation, oil & gas, and water management sectors.">
     <title>Services | Uruk Group</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="assets/logo-uruk.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <a href="#main-content" class="sr-only">Skip to main content</a>
     
-    <header role="banner">
-        <div class="container">
-            <div class="logo">
-                <img src="assets/logo-uruk.svg" alt="Uruk Group Logo" width="150" height="50">
-                <span class="sr-only">Uruk Group</span>
-            </div>
-            <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">🌙</button>
-            <nav role="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/services.html" aria-current="page">Services</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/news.html">News</a></li>
-                    <li><a href="/ehs.html">EHS Planning</a></li>
-                    <li><a href="/legal.html">Legal</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <header role="banner" class="header">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <img src="assets/logo-uruk.png" alt="Uruk Group" width="140" height="45">
+        </a>
+        <button class="mobile-menu-button" aria-label="Toggle navigation menu">
+          <span>☰</span>
+        </button>
+        <div class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="cta-button">Request a Consultation</a>
+          </div>
         </div>
-    </header>
+        <div class="overlay"></div>
+      </div>
+    </nav>
+  </header>
 
     <main id="main-content" role="main">
         <section class="hero services-hero" aria-labelledby="services-hero-title">

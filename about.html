@@ -3,107 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Uruk Group's history, leadership, and commitment to rebuilding Iraq's energy infrastructure with world-class engineering expertise.">
-    <title>About Uruk Group | History & Leadership</title>
+    <meta name="description" content="Learn about Uruk Group's history, mission, and commitment to rebuilding Iraq's infrastructure through engineering excellence.">
+    <title>About Us - Uruk Group | Engineering Excellence</title>
+    <link rel="icon" type="image/png" href="assets/logo-uruk.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
     <a href="#main-content" class="sr-only">Skip to main content</a>
     
-    <header role="banner">
-        <div class="container">
-            <div class="logo">
-                <img src="assets/logo-uruk.svg" alt="Uruk Group Logo" width="150" height="50">
-                <span class="sr-only">Uruk Group</span>
+    <header role="banner" class="header">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <a href="/" class="nav-logo">
+                    <img src="assets/logo-uruk.png" alt="Uruk Group" width="140" height="45">
+                </a>
+                <button class="mobile-menu-button" aria-label="Toggle navigation menu">
+                    <span>☰</span>
+                </button>
+                <div class="nav-links-wrapper">
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="contact.html" class="cta-button">Request a Consultation</a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
             </div>
-            <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">🌙</button>
-            <nav role="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about.html" aria-current="page">About Us</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/news.html">News</a></li>
-                    <li><a href="/ehs.html">EHS Planning</a></li>
-                    <li><a href="/legal.html">Legal</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
 
     <main id="main-content" role="main">
-        <section class="hero about-hero" aria-labelledby="about-hero-title">
+        <section class="page-header">
             <div class="container">
-                <h1 id="about-hero-title">Our History & Leadership</h1>
-                <p class="hero-subtitle">Pioneering Iraq's Energy Future Since 2003</p>
+                <h1>About Uruk Group</h1>
             </div>
         </section>
 
-        <section class="history" aria-labelledby="history-title">
+        <section class="about-intro fade-in">
             <div class="container">
-                <div class="grid grid-2">
-                    <div class="history-content">
-                        <h2 id="history-title">Our History</h2>
-                        <p>Uruk brings together Iraq's best minds in the energy and power generation industry. These individuals had been at the forefront of the nation's energy sector, establishing national power grids and creating a nationwide energy and industrial network; and they were then tasked to rebuild the nation's energy infrastructure in 1990.</p>
-                        
-                        <p>They formed a private enterprise in 2003 intending to help rebuild Iraq's energy infrastructure. Their mandate was to offer Engineering, Procurement and Construction (EPC) services to the public and private sector, leveraging their intricate knowledge of local resources and regulations while applying the international standards of excellence they had rigorously implemented in their respective fields.</p>
-                        
-                        <p>Uruk's team members – men who had been responsible for the country's most significant engineering feats in power and electricity over the past three decades successfully completed the company's first major project within just two years.</p>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2>Iraq's Engineering Excellence</h2>
+                        <p class="intro-text">Founded in 2003, Uruk Group has emerged as Iraq's leading engineering and EPC company, dedicated to rebuilding the nation's infrastructure and creating a sustainable future.</p>
+                        <p>With over two decades of experience, our team of expert engineers and project managers have successfully delivered critical infrastructure projects across the energy, water, and transportation sectors throughout the Middle East.</p>
+                        <p>Combining local expertise with international standards, Uruk Group bridges the gap between global engineering practices and the unique challenges of the Iraqi market.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1,000+</span>
+                                <span class="stat-label">Employees</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">$2B+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="history-image">
-                        <img src="assets/heritage-infrastructure.svg" alt="Historical Infrastructure" class="lazy" loading="lazy">
+                    <div class="about-image">
+                        <img src="assets/ceo-portrait.svg" alt="Uruk Group Leadership" class="rounded-image">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="leadership" aria-labelledby="leadership-title">
+        <section class="mission-vision parallax-section fade-in">
             <div class="container">
-                <h2 id="leadership-title">Our Leadership</h2>
-                <div class="grid grid-2">
-                    <div class="leadership-content">
-                        <p>Uruk Engineering & Contracting Services is led by prominent Iraqi engineers and scientists whose collective experience spans decades in the energy sector including oil, gas, nuclear power, electricity, water and waste management.</p>
-                        
-                        <p>Their skills had ensured the public received electricity despite years of import restrictions, logistical challenges, legislative hurdles and security risks. The firm's Chief Executive Officer, Dr. Jafar D. Jafar, developed innovative solutions to complex engineering challenges; and when reconstruction began, he chaired the National Committee for Technology Transfer.</p>
-                        
-                        <p>His vision of a professional, world class engineering operation led him to form Uruk as a private firm that would play an integral role in the rebuilding of Iraq.</p>
+                <div class="mv-grid">
+                    <div class="mission-block">
+                        <div class="icon-circle">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+                            </svg>
+                        </div>
+                        <h2>Our Mission</h2>
+                        <p>To rebuild and modernize Iraq's infrastructure through innovative engineering solutions, fostering economic growth and improving quality of life for all Iraqis.</p>
                     </div>
-                    <div class="leadership-image">
-                        <img src="assets/power-plant-hero.svg" alt="Power Plant" class="lazy" loading="lazy">
+                    <div class="vision-block">
+                        <div class="icon-circle">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/>
+                            </svg>
+                        </div>
+                        <h2>Our Vision</h2>
+                        <p>To be the premier engineering partner in the Middle East, recognized for excellence, innovation, and sustainable development that transforms communities and creates lasting value.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="global-presence" aria-labelledby="global-title">
+        <section class="core-values fade-in">
             <div class="container">
-                <h2 id="global-title">Global Presence</h2>
-                <div class="grid grid-2">
-                    <div class="global-content">
-                        <p>Uruk is a fully Iraqi-owned company headquartered in the United Arab Emirates with offices in Baghdad and Dubai. The company offers turnkey solutions with single source responsibility for all its projects, employing the best local expertise while seamlessly integrating state-of-the-art technology, resources and best practices. Uruk has worked with several global players such as Bechtel International, GE, and ABB and served several Iraqi ministries.</p>
-                        
-                        <p>Uruk's shareholder base gives it unique access to an international network of service providers and a diverse asset base that facilitates its work in Iraq. In addition, shareholders are party to numerous joint ventures across the globe in Canada, Argentina, Montenegro, Egypt, Pakistan, Yemen, Oman, and the UAE.</p>
-                        
-                        <p>Uruk's financial strength combined with its international network and local expertise ensures crucial reconstruction contracts are performed on-time and within budget while maintaining high standards of excellence and mitigated risk.</p>
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 2h1.5v3l1-1.5 1 1.5V5H17v2.5h-3.5V14h-1V7.5H9V5h3zm-4 14H6v-3h2v3zm3 0H9v-3h2v3zm5 0h-2v-3h2v3zm3 0h-2v-3h2v3z"/>
+                            </svg>
+                        </div>
+                        <h3>Excellence</h3>
+                        <p>We strive for the highest standards in everything we do, from engineering design to project delivery.</p>
                     </div>
-                    <div class="global-image">
-                        <img src="assets/partnerships.svg" alt="Global Partnerships" class="lazy" loading="lazy">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>We conduct business with honesty, transparency, and ethical responsibility in all our relationships.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We embrace creative solutions and cutting-edge technologies to solve complex engineering challenges.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"/>
+                            </svg>
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>We are committed to environmentally responsible practices and sustainable development for future generations.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="partners" aria-labelledby="partners-title">
+        <section class="company-timeline fade-in">
             <div class="container">
-                <h2 id="partners-title">Our Global Partners</h2>
-                <div class="partner-logos">
-                    <img src="assets/partners/bechtel.svg" alt="Bechtel" width="120" height="40">
-                    <img src="assets/partners/ge.svg" alt="GE" width="80" height="40">
-                    <img src="assets/partners/abb.svg" alt="ABB" width="80" height="40">
+                <h2 class="section-title">Our Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2003</div>
+                        <div class="timeline-content">
+                            <h3>Formation of Uruk Group</h3>
+                            <p>Established as a private enterprise with the mandate to offer Engineering, Procurement and Construction (EPC) services.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2005</div>
+                        <div class="timeline-content">
+                            <h3>First Major Project</h3>
+                            <p>Successful completion of the company's first major power plant project, demonstrating Uruk's engineering expertise.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2010</div>
+                        <div class="timeline-content">
+                            <h3>International Expansion</h3>
+                            <p>Established partnerships with global engineering firms and opened offices in Dubai and Abu Dhabi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2015</div>
+                        <div class="timeline-content">
+                            <h3>Major Infrastructure Projects</h3>
+                            <p>Secured contracts for critical national infrastructure projects including the Taji Power Plant.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <h3>Innovation Initiative</h3>
+                            <p>Launched research and development division focused on sustainable engineering solutions.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Today</div>
+                        <div class="timeline-content">
+                            <h3>Leading the Future</h3>
+                            <p>Continuing to shape Iraq's infrastructure landscape with cutting-edge engineering and commitment to excellence.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="leadership-team fade-in">
+            <div class="container">
+                <h2 class="section-title">Our Leadership</h2>
+                <div class="leaders-grid">
+                    <div class="leader-card">
+                        <img src="assets/ceo-portrait.svg" alt="Dr. Jafar D. Jafar - CEO" class="leader-image">
+                        <div class="leader-info">
+                            <h3>Dr. Jafar D. Jafar</h3>
+                            <p class="leader-title">Chief Executive Officer</p>
+                            <p>With over 30 years of experience in engineering and infrastructure development, Dr. Jafar leads Uruk Group's strategic vision and operations.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <img src="assets/ceo-portrait.svg" alt="Eng. Amina Al-Saadi - CTO" class="leader-image">
+                        <div class="leader-info">
+                            <h3>Eng. Amina Al-Saadi</h3>
+                            <p class="leader-title">Chief Technical Officer</p>
+                            <p>A pioneering figure in the region's engineering sector, Eng. Al-Saadi oversees all technical operations and innovation initiatives.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <img src="assets/ceo-portrait.svg" alt="Khalid Mahmoud - COO" class="leader-image">
+                        <div class="leader-info">
+                            <h3>Khalid Mahmoud</h3>
+                            <p class="leader-title">Chief Operations Officer</p>
+                            <p>With extensive experience managing large-scale projects across the Middle East, Khalid ensures operational excellence across all projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section fade-in">
+            <div class="container">
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <img src="assets/power-plant-hero.svg" alt="Uruk Group Overview" class="video-placeholder">
+                        <button class="play-button" aria-label="Play video">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-text">
+                        <h2>Experience Uruk Engineering</h2>
+                        <p>See how we're building the future of Iraq through innovative engineering solutions and infrastructure development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section parallax-section fade-in" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title">Ready to Build the Future Together?</h2>
+                <p>Let's discuss how we can help with your next project</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Get in Touch</a>
             </div>
         </section>
     </main>
@@ -131,16 +289,18 @@
                 </div>
                 <div class="social-share">
                     <h3>Follow Us</h3>
-                    <a href="https://linkedin.com/company/urukgroup" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/urukgroup" aria-label="Twitter">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
-                    </a>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/urukgroup" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/urukgroup" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -151,54 +311,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Theme handling
-        const themeToggle = document.querySelector('.theme-toggle');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        // Check for saved theme preference or use system preference
-        const currentTheme = localStorage.getItem('theme') || 
-            (prefersDarkScheme.matches ? 'dark' : 'light');
-        
-        // Apply the theme
-        document.documentElement.setAttribute('data-theme', currentTheme);
-        
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', () => {
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-        
-        // Listen for system theme changes
-        prefersDarkScheme.addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                document.documentElement.setAttribute('data-theme', 
-                    e.matches ? 'dark' : 'light');
-            }
-        });
-
-        // Lazy loading
-        document.addEventListener("DOMContentLoaded", function() {
-            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-            if ("IntersectionObserver" in window) {
-                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            let lazyImage = entry.target;
-                            lazyImage.src = lazyImage.dataset.src;
-                            lazyImage.classList.remove("lazy");
-                            lazyImageObserver.unobserve(lazyImage);
-                        }
-                    });
-                });
-
-                lazyImages.forEach(function(lazyImage) {
-                    lazyImageObserver.observe(lazyImage);
-                });
-            }
-        });
-    </script>
 </body>
 </html> 

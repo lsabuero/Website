@@ -3,97 +3,370 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stay updated with the latest news, projects, and announcements from Uruk Group, Iraq's leading engineering and EPC company.">
   <title>News & Updates | Uruk Group</title>
+  <link rel="icon" type="image/png" href="assets/logo-uruk.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/logo-uruk.svg" alt="Uruk Group Logo">
-      <span>Uruk Group</span>
-    </div>
-    <nav>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="news.html">News</a>
-      <a href="ehs.html">EHS Planning</a>
-      <a href="legal.html">Legal</a>
-      <a href="contact.html">Contact</a>
-      <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">🌙</button>
+  <div class="preloader">
+      <div class="preloader-spinner"></div>
+  </div>
+
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+  
+  <header role="banner" class="header transparent">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <img src="assets/logo-uruk.png" alt="Uruk Group" width="140" height="45">
+        </a>
+        <button class="mobile-menu-button" aria-label="Toggle navigation menu">
+          <span class="menu-icon"></span>
+        </button>
+        <div class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html" class="active">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="cta-button">Request a Consultation</a>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="section-title">Latest News & Updates</div>
-      <div class="news-grid">
-        <article class="news-article">
-          <div class="news-date">April 2025</div>
-          <h2>Uruk Group Wins 2025 EPC Excellence Award</h2>
-          <img src="assets/award-ceremony.jpg" alt="EPC Excellence Award" class="news-img">
-          <p>Uruk Group has been recognized with the prestigious 2025 EPC Excellence Award for outstanding project delivery and innovation in Iraq's energy sector. The award highlights our commitment to quality, safety, and sustainable development.</p>
-          <a href="#" class="read-more">Read Full Article →</a>
-        </article>
-
-        <article class="news-article">
-          <div class="news-date">March 2025</div>
-          <h2>Taji Power Plant Milestone Achieved</h2>
-          <img src="assets/taji-power-plant.jpg" alt="Taji Power Plant" class="news-img">
-          <p>We are proud to announce the successful completion of phase two at the Taji Power Plant, adding 500MW to the national grid. This achievement marks a significant step in Iraq's energy independence journey.</p>
-          <a href="#" class="read-more">Read Full Article →</a>
-        </article>
-
-        <article class="news-article">
-          <div class="news-date">February 2025</div>
-          <h2>Strategic Partnership with ABB Announced</h2>
-          <img src="assets/partnerships.jpg" alt="ABB Partnership" class="news-img">
-          <p>Uruk Group and ABB have announced a strategic partnership to develop advanced grid solutions for Iraq. This collaboration will focus on modernizing the country's power distribution infrastructure.</p>
-          <a href="#" class="read-more">Read Full Article →</a>
-        </article>
-
-        <article class="news-article">
-          <div class="news-date">January 2025</div>
-          <h2>New Training Center Opens in Baghdad</h2>
-          <img src="assets/training-center.jpg" alt="Training Center" class="news-img">
-          <p>Our new state-of-the-art training center in Baghdad has officially opened its doors. The facility will provide advanced technical training for local engineers and technicians.</p>
-          <a href="#" class="read-more">Read Full Article →</a>
-        </article>
+  <main id="main-content" role="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>Latest News & Insights</h1>
+        <p class="hero-subtitle">Updates from Uruk Group and the Engineering Industry</p>
+      </div>
+    </section>
+    
+    <section class="news-categories fade-in">
+      <div class="container">
+        <div class="news-filter">
+          <button class="news-filter-btn active" data-filter="all">All Posts</button>
+          <button class="news-filter-btn" data-filter="company">Company News</button>
+          <button class="news-filter-btn" data-filter="projects">Project Updates</button>
+          <button class="news-filter-btn" data-filter="insights">Industry Insights</button>
+        </div>
       </div>
     </section>
 
-    <section class="section" style="background:var(--clay);">
-      <div class="section-title">Press Releases</div>
-      <div class="press-releases">
-        <div class="press-release">
-          <div class="press-date">March 15, 2025</div>
-          <h3>Uruk Group Announces Q1 2025 Financial Results</h3>
-          <a href="#" class="read-more">Download PDF →</a>
+    <section class="news-section fade-in">
+      <div class="container">
+        <div class="blog-grid">
+          <!-- Featured Article -->
+          <article class="blog-card featured" data-category="company">
+            <div class="blog-img">
+              <span class="blog-date">Mar 18, 2025</span>
+              <span class="blog-category">Company News</span>
+              <img src="assets/award-ceremony.svg" alt="Uruk Group Receives Industry Excellence Award" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>Uruk Group Wins 2025 EPC Excellence Award</h2>
+              <p>Uruk Group has been recognized with the prestigious 2025 EPC Excellence Award for outstanding project delivery and innovation in Iraq's energy sector. The award highlights our commitment to quality, safety, and sustainable development practices.</p>
+              <p>The ceremony, held in Dubai last week, brought together leading companies from across the Middle East's engineering and construction sectors...</p>
+              <a href="articles/epc-excellence-award.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
+
+          <!-- Regular Articles -->
+          <article class="blog-card" data-category="projects">
+            <div class="blog-img">
+              <span class="blog-date">Feb 05, 2025</span>
+              <span class="blog-category">Project Updates</span>
+              <img src="assets/taji-power-plant.svg" alt="Taji Power Plant Project Milestone" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>Taji Power Plant Milestone Achieved</h2>
+              <p>We are proud to announce the successful completion of phase two at the Taji Power Plant, adding 500MW to the national grid. This achievement marks a significant step in Iraq's energy independence journey.</p>
+              <a href="articles/taji-power-plant-milestone.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="company">
+            <div class="blog-img">
+              <span class="blog-date">Jan 20, 2025</span>
+              <span class="blog-category">Company News</span>
+              <img src="assets/partnerships.svg" alt="Strategic Partnership with ABB" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>Strategic Partnership with ABB Announced</h2>
+              <p>Uruk Group and ABB have announced a strategic partnership to develop advanced grid solutions for Iraq. This collaboration will focus on modernizing the country's power distribution infrastructure.</p>
+              <a href="articles/abb-partnership.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="company">
+            <div class="blog-img">
+              <span class="blog-date">Dec 12, 2024</span>
+              <span class="blog-category">Company News</span>
+              <img src="assets/training-center.svg" alt="New Engineering Training Center in Baghdad" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>New Training Center Opens in Baghdad</h2>
+              <p>Our new state-of-the-art training center in Baghdad has officially opened its doors. The facility will provide advanced technical training for local engineers and technicians.</p>
+              <a href="articles/training-center-opening.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="insights">
+            <div class="blog-img">
+              <span class="blog-date">Nov 28, 2024</span>
+              <span class="blog-category">Industry Insights</span>
+              <img src="assets/engineering.svg" alt="Renewable Energy Trends in Middle East" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>Renewable Energy Trends Reshaping Middle East</h2>
+              <p>As the Middle East continues its energy transformation, renewable sources are becoming increasingly important. This analysis examines the latest trends and technologies driving sustainable development in the region.</p>
+              <a href="articles/renewable-energy-trends.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="projects">
+            <div class="blog-img">
+              <span class="blog-date">Oct 15, 2024</span>
+              <span class="blog-category">Project Updates</span>
+              <img src="assets/infrastructure.svg" alt="Basrah Water Treatment Project" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>Basrah Water Treatment Project Breaking Ground</h2>
+              <p>Uruk Group has officially broken ground on the new Basrah Water Treatment Facility, a critical infrastructure project that will provide clean water to over 500,000 residents in the region.</p>
+              <a href="articles/basrah-water-project.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="insights">
+            <div class="blog-img">
+              <span class="blog-date">Sept 22, 2024</span>
+              <span class="blog-category">Industry Insights</span>
+              <img src="assets/procurement.svg" alt="Digital Transformation in EPC" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>Digital Transformation in EPC Projects</h2>
+              <p>The adoption of digital technologies is revolutionizing how EPC projects are delivered. From Building Information Modeling (BIM) to AI-powered project management, this article explores the latest innovations.</p>
+              <a href="articles/digital-transformation-epc.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="insights">
+            <div class="blog-img">
+              <span class="blog-date">Aug 18, 2024</span>
+              <span class="blog-category">Industry Insights</span>
+              <img src="assets/construction.svg" alt="Sustainable Construction Practices" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <h2>Sustainable Construction Practices for Arid Climates</h2>
+              <p>Implementing sustainable construction practices in arid regions presents unique challenges. Our engineering team shares insights on water conservation, energy efficiency, and materials selection for projects in Iraq and similar environments.</p>
+              <a href="articles/sustainable-construction-arid-climates.html" class="read-more-btn">Read Full Article</a>
+            </div>
+          </article>
         </div>
-        <div class="press-release">
-          <div class="press-date">February 28, 2025</div>
-          <h3>New Environmental Initiative Launched</h3>
-          <a href="#" class="read-more">Download PDF →</a>
+
+        <div class="pagination">
+          <button class="pagination-btn" disabled>Previous</button>
+          <span class="pagination-numbers">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+          </span>
+          <button class="pagination-btn">Next</button>
         </div>
-        <div class="press-release">
-          <div class="press-date">January 10, 2025</div>
-          <h3>Uruk Group Expands Operations in Southern Iraq</h3>
-          <a href="#" class="read-more">Download PDF →</a>
+      </div>
+    </section>
+
+    <section class="newsletter-signup fade-in">
+      <div class="container">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay informed about the latest developments in Iraq's engineering and construction sectors. Receive project updates, industry insights, and company news directly in your inbox.</p>
+          </div>
+          <div class="newsletter-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+              <div class="form-privacy">
+                <label>
+                  <input type="checkbox" required>
+                  I agree to receive newsletters and accept the <a href="#">privacy policy</a>
+                </label>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="press-section fade-in">
+      <div class="container">
+        <h2>Press Releases</h2>
+        <div class="press-releases">
+          <div class="press-release">
+            <span class="press-date">March 15, 2025</span>
+            <h3>Uruk Group Announces Q1 2025 Financial Results</h3>
+            <a href="#" class="btn btn-outline-secondary">Download PDF</a>
+          </div>
+          <div class="press-release">
+            <span class="press-date">February 28, 2025</span>
+            <h3>New Environmental Initiative Launched</h3>
+            <a href="#" class="btn btn-outline-secondary">Download PDF</a>
+          </div>
+          <div class="press-release">
+            <span class="press-date">January 10, 2025</span>
+            <h3>Uruk Group Expands Operations in Southern Iraq</h3>
+            <a href="#" class="btn btn-outline-secondary">Download PDF</a>
+          </div>
+        </div>
+        <div class="press-archive">
+          <a href="press-archive.html" class="btn btn-secondary">View All Press Releases</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section parallax-section fade-in" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Have a Story or Press Inquiry?</h2>
+        <p>Our media relations team is ready to assist journalists and industry partners</p>
+        <a href="contact.html" class="btn btn-primary btn-large">Contact Media Relations</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-links">
-      <a href="ehs.html">EHS Planning</a>
-      <a href="legal.html">Legal</a>
-      <a href="contact.html">Contact</a>
-      <a href="resources/uruk-corporate-profile.pdf" download>Corporate Profile (PDF)</a>
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column company-info">
+          <img src="assets/logo-uruk.png" alt="Uruk Group" width="140" height="45" class="footer-logo">
+          <p class="company-bio">Uruk Group is a leading engineering and EPC company in Iraq, dedicated to delivering exceptional infrastructure, power generation, and industrial solutions that drive economic growth.</p>
+        </div>
+        
+        <div class="footer-column footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column footer-contact">
+          <h3>Contact Us</h3>
+          <address>
+            <p>
+              <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Uruk Group Headquarters
+            </p>
+            <p>Al Mansour District</p>
+            <p>Baghdad, Iraq</p>
+            <p>
+              <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email: <a href="mailto:info@urukgroup.com">info@urukgroup.com</a>
+            </p>
+            <p>
+              <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+              </svg>
+              Phone: <a href="tel:+964123456789">+964 123 456 789</a>
+            </p>
+          </address>
+        </div>
+        
+        <div class="footer-column footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates and insights.</p>
+          <form action="#" method="post" class="footer-form">
+            <div class="form-group">
+              <input type="email" name="footer-email" id="footer-email" placeholder="Your Email Address" required>
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </div>
+          </form>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/urukgroup" aria-label="LinkedIn" class="social-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/urukgroup" aria-label="Twitter" class="social-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com/urukgroup" aria-label="YouTube" class="social-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2025 Uruk Group. All rights reserved.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
     </div>
-    &copy; 2025 Uruk Group. All rights reserved. | Designed for the future of Iraq.
   </footer>
+
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Filter functionality for news categories
+      const filterButtons = document.querySelectorAll('.news-filter-btn');
+      const blogCards = document.querySelectorAll('.blog-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('active');
+          });
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Get filter value
+          const filterValue = this.getAttribute('data-filter');
+          
+          // Filter blog cards
+          blogCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html> 

@@ -8,20 +8,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/logo-uruk.svg" alt="Uruk Group Logo">
-      <span>Uruk Group</span>
-    </div>
-    <nav>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="news.html">News</a>
-      <a href="ehs.html">EHS Planning</a>
-      <a href="legal.html">Legal</a>
-      <a href="contact.html">Contact</a>
-      <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">🌙</button>
+  <header role="banner" class="header">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <img src="assets/logo-uruk.png" alt="Uruk Group" width="140" height="45">
+        </a>
+        <button class="mobile-menu-button" aria-label="Toggle navigation menu">
+          <span>☰</span>
+        </button>
+        <div class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="cta-button">Request a Consultation</a>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
     </nav>
   </header>
 

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="164" height="51" viewBox="0 0 164 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <!-- URUK Text -->
-    <text x="0" y="38" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="#555555">URUK</text>
-    <!-- Swoosh Red -->
-    <path d="M120 10 Q140 25 120 40" stroke="#CE1126" stroke-width="7" fill="none"/>
-    <!-- Swoosh White -->
-    <path d="M127 10 Q147 25 127 40" stroke="#FFFFFF" stroke-width="7" fill="none"/>
-    <!-- Swoosh Green -->
-    <path d="M134 10 Q154 25 134 40" stroke="#007A3D" stroke-width="7" fill="none"/>
-    <!-- Gray Triangle -->
-    <polygon points="141,10 163,25 141,40" fill="#555555"/>
-  </g>
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- URUK Text -->
+  <path d="M1 10V30H6V14H16V30H21V10H1Z" fill="#4D4D4D"/>
+  <path d="M24 10V30H29V23H36V30H41V23H39V17H41V10H24ZM36 14V17H29V14H36Z" fill="#4D4D4D"/>
+  <path d="M44 10V30H49V23H56V30H61V10H56V18H49V10H44Z" fill="#4D4D4D"/>
+  <path d="M64 10V30H84V25H69V10H64Z" fill="#4D4D4D"/>
+  
+  <!-- Italian flag-inspired stripes -->
+  <path d="M90 8C90 8 100 15 90 32" stroke="#CE1126" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M98 8C98 8 108 15 98 32" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M106 8C106 8 116 15 106 32" stroke="#006B3F" stroke-width="5" fill="none" stroke-linecap="round"/>
 </svg> 
